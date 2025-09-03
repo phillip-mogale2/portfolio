@@ -238,7 +238,7 @@ button {
     width: 80%;
     height: 80%;
     border-radius: 50%;
-    background: url('/images/Phillip.png') center/cover;
+    background: url('images/Phillip.png') center/cover;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -418,15 +418,15 @@ button {
 }
 
 .project-1 {
-    background-image: url('/images/atm-simulator.png');
+    background-image: url('images/atm-simulator.png');
 }
 
 .project-2 {
-    background-image: url('/images/blog.png');
+    background-image: url('images/blog.png');
 }
 
 .project-3 {
-    background-image: url('/images/portfolio.png');
+    background-image: url('images/portfolio.png');
 }
 
 .work-title {
@@ -968,4 +968,5 @@ html {
     60% {
         transform: translateY(-10px);
     }
+
 }

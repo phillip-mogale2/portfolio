@@ -418,15 +418,15 @@ button {
 }
 
 .project-1 {
-    background-image: url('images/atm-simulator.png');
+    background-image: url('../images/atm-simulator.png');
 }
 
 .project-2 {
-    background-image: url('images/blog.png');
+    background-image: url('../images/blog.png');
 }
 
 .project-3 {
-    background-image: url('images/portfolio.png');
+    background-image: url('../images/portfolio.png');
 }
 
 .work-title {
@@ -835,7 +835,6 @@ button {
         padding-right: 0;
         margin-bottom: 50px;
         padding-left: 0px;
-
     }
 }
 
@@ -968,7 +967,4 @@ html {
     60% {
         transform: translateY(-10px);
     }
-
 }
-
-

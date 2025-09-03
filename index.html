@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phillip Mogale | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <canvas id="threejs-bg"></canvas>
+    <div id="particles-js"></div>
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="glow">&lt;/&gt; Phillip Mogale</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link hover-underline">Home</a></li>
+            <li><a href="#about" class="nav-link hover-underline">About Me</a></li>
+            <li><a href="#work" class="nav-link hover-underline">Projects</a></li>
+            <li><a href="#skills" class="nav-link hover-underline">Skills</a></li>
+            <li><a href="#contact" class="nav-link hover-underline">Contact</a></li>
+        </ul>
+        <div class="nav-hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <section id="home" class="hero-section">
+        <canvas id="threejs-bg"></canvas>
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word title-word-1">Software</span>
+                <span class="title-word title-word-2">& Web</span>
+                <span class="title-word title-word-3">Developer</span>
+            </h1>
+            <p class="hero-subtitle">Blending creativity with tech!</p>
+            <div class="hero-buttons">
+                <button class="btn-hover-glow" onclick="window.open('https://github.com/phillip-mogale2', '_blank')">Github</button>
+                <button class="btn-hover-glow" onclick="window.open('https://www.linkedin.com/in/phillip-mogale', '_blank')">LinkedIn</button>
+            </div>
+        </div>
+        <div class="hero-avatar">
+            <div class="avatar-container">
+                <div class="avatar-image"></div>
+                <div class="avatar-ring"></div>
+                <div class="avatar-particles"></div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section id="about" class="about-section">
+            <h2 class="section-title"><span class="section-number">01</span>About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">My coding journey began in 2022. Initially I learned HTML, CSS, and JavaScript to build websites. 
+                        Now with expertise in front-end, back-end, and interactive technologies, I build immersive websites and Android apps that captivate users.<br><br>
+                        
+                        My approach to software development is centered on the principle of clean and maintainable code with a focus on flexibility to 
+                        adjust to the rapid transformations of the world of technology.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2">0</div>
+                            <div class="stat-label">Years Exp</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="1">0</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tech">
+                    <div class="tech-bubble" data-tech="Supabase">
+                        <img src="/images/supabase.png" alt="Supabase">
+                    </div>
+                    <div class="tech-bubble" data-tech="Firebase">
+                        <img src="/images/firebase.png" alt="Firebase">
+                    </div>
+                    <div class="tech-bubble" data-tech="Google-cloud">
+                        <img src="/images/google-cloud.png" alt="Google cloud">
+                    </div>
+                    <div class="tech-bubble" data-tech="Git">
+                        <img src="/images/git.png" alt="Git">
+                    </div>
+                    <div class="tech-bubble" data-tech="VScode">
+                        <img src="/images/vscode.png" alt="VScode">
+                    </div>
+                    <div class="tech-bubble" data-tech="AWS">
+                        <img src="/images/aws.png" alt="AWS">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-section">
+            <h2 class="section-title"><span class="section-number">02</span>Projects</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-card-inner">
+                        <div class="work-card-front">
+                            <div class="work-image project-1"></div>
+                            <h3 class="work-title">ATM Simulator</h3>
+                        </div>
+                        <div class="work-card-back">
+                            <h3>ATM Simulator</h3>
+                            <p>A simple console based ATM simulator that lets users perform basic banking operations like
+                                depositing, and withdrawing money. It uses text file as a database.
+                            </p>
+                            <div class="work-keywords">
+                                <span>Java</span><span>Text file</span>
+                            </div>
+                            <button onclick="window.open('https://github.com/phillip-mogale2/Aesthetic-ATM', '_blank')" class="btn-hover-glow">
+                                View on Github
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-card-inner">
+                        <div class="work-card-front">
+                            <div class="work-image project-2"></div>
+                            <h3 class="work-title">Insider | Sketch Tycoon</h3>
+                        </div>
+                        <div class="work-card-back">
+                            <h3>Insider | Sketch Tycoon</h3>
+                            <p>A blog that shares creative insights, strategies, and behind-the-scenes perspectives on
+                                building, designing, and thriving in the digital world.
+                            </p>
+                            <div class="work-keywords">
+                                <span>HTML</span><span>CSS</span><span>JS</span><span>PosgreSQL</span><span>Supabase</span>
+                            </div>
+                            <button onclick="window.open('https://sketchtycoon.com/insider', '_blank')" class="btn-hover-glow">Visit Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-card-inner">
+                        <div class="work-card-front">
+                            <div class="work-image project-3"></div>
+                            <h3 class="work-title">Developer Portfolio</h3>
+                        </div>
+                        <div class="work-card-back">
+                            <h3>Developer Portfolio</h3>
+                            <p>A living document of my passion for building: featuring some projects, technical skills,
+                                and the code behind building scalable, user-focused digital experiences.</p>
+                            <div class="work-keywords">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <button onclick="window.open('#', '_blank')" class="btn-hover-glow">Visit Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title"><span class="section-number">03</span>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Kotlin</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="20"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PostgreSQL</span>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title"><span class="section-number">04</span>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-method">
+                            <i class="icon-email"></i>
+                            <span>phillipphutiane111@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="icon-location"></i>
+                            <span>Dikgale South, Polokwane City</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="icon-location"></i>
+                            <span>Limpopo, South Africa</span>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://github.com/phillip-mogale2" class="social-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/phillip-mogale" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/profile.php?id=61580144495781" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/@wildbytedev?_t=ZS-8zFXtzULPec&_r=1" class="social-icon" aria-label="Tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-card">
+                        <h3>Send Me a Message</h3>
+                        <form id="main-form">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name-input" required>
+                                <label for="name-input">Your Name</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email-input" required>
+                                <label for="email-input">Email Address</Address></label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message-input" required></textarea>
+                                <label for="message-input">Message</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <button type="submit" class="btn-hover-glow">Send Message</button>
+                        </form>
+                        <div id="statusMessage" class="hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copy">© 2025 Phillip Mogale Dev Portfolio. All rights reserved.</div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="js/threejs-background.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('main-form');
+            const statusMessage = document.getElementById('statusMessage');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

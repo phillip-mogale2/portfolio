@@ -28,6 +28,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--text-color);
@@ -238,7 +243,7 @@ button {
     width: 80%;
     height: 80%;
     border-radius: 50%;
-    background: url('../images/Phillip.png') center/cover;
+    background: url('/images/Phillip.png') center/cover;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -412,21 +417,23 @@ button {
 }
 
 .work-image {
-    height: 70%;
+    width: 100%;
+    height: 200px;
     background-size: cover;
     background-position: start;
+    border-radius: 10px;
 }
 
 .project-1 {
-    background-image: url('../images/atm-simulator.png');
+  background-image: url('../images/atm-simulator.png');
 }
 
 .project-2 {
-    background-image: url('../images/blog.png');
+  background-image: url('../images/blog.png');
 }
 
 .project-3 {
-    background-image: url('../images/portfolio.png');
+  background-image: url('../images/portfolio.png');
 }
 
 .work-title {
@@ -835,6 +842,7 @@ button {
         padding-right: 0;
         margin-bottom: 50px;
         padding-left: 0px;
+
     }
 }
 

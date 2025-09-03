@@ -28,11 +28,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 body {
     font-family: var(--font-body);
     color: var(--text-color);
@@ -226,6 +221,7 @@ button {
 }
 
 .hero-avatar {
+    padding-left: 30px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -691,7 +687,6 @@ button {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
@@ -701,7 +696,6 @@ button {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(-360deg);
     }
@@ -711,14 +705,12 @@ button {
     from {
         text-shadow: 0 0 5px var(--primary-color);
     }
-
     to {
         text-shadow: 0 0 20px var(--primary-color);
     }
 }
 
 @media (max-width: 992px) {
-
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
@@ -976,4 +968,3 @@ html {
         transform: translateY(-10px);
     }
 }
-
